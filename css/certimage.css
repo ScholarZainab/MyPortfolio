@@ -1,0 +1,34 @@
+.container {
+  max-width: 800px;
+  width: 100%;
+  height: 500px;
+  border: 7px solid #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+.image-box {
+  display: flex;
+  height: 100%;
+  width: 2600%; /* Adjusted for 26 images (100% for each image) */
+  animation: imgBox 52s linear infinite; /* Adjusted duration for smooth scrolling */
+}
+@keyframes imgBox {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -2500%; /* Adjusted for 26 images */
+  }
+}
+.image-box:hover {
+  animation-play-state: paused;
+}
+.image-box .image {
+  width: calc(100% / 26); /* Updated to divide by 26 images */
+  height: 100%;
+}
+.image-box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,86 @@
+ /* Container for the section */
+        .section {
+            position: relative;
+            margin: 20px auto;
+            padding: 20px;
+            width: 90%;
+            max-width: 800px;
+            border: 2px solid #ddd;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        /* Dynamic heading styles */
+        .dynamic-heading {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            margin: 20px 0;
+            color: #333;
+            animation: move 5s linear infinite, change-color 2s linear infinite;
+        }
+
+        /* Heading animation */
+        @keyframes move {
+            0% {
+                transform: translateX(-100%);
+            }
+            50% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        @keyframes change-color {
+            0% {
+                color: #ff5733;
+            }
+            33% {
+                color: #33ff57;
+            }
+            66% {
+                color: #3357ff;
+            }
+            100% {
+                color: #ff5733;
+            }
+        }
+
+        /* Button styles */
+        .project-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .project-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Image styles */
+        .project-image {
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }

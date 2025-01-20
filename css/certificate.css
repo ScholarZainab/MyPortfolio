@@ -1,0 +1,82 @@
+  /* General Reset */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Certification Section Container */
+        .certification-section {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        /* Dynamic Heading Styles */
+        .certification-heading {
+            font-size: 3rem;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+            animation: move-heading 10s linear infinite, glowing-text 2s ease-in-out infinite;
+        }
+
+        /* Heading Animation */
+        @keyframes move-heading {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        @keyframes glowing-text {
+            0%, 100% {
+                text-shadow: 0 0 10px #fff, 0 0 20px #ff5a5f, 0 0 30px #ff8d8a, 0 0 40px #ffc0c2;
+            }
+            50% {
+                text-shadow: 0 0 20px #fff, 0 0 30px #ff8d8a, 0 0 40px #ffc0c2, 0 0 50px #ff5a5f;
+            }
+        }
+
+        /* Feature Image Styles */
+        .certification-image {
+            max-width: 90%;
+            height: auto;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .certification-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Button Styles */
+        .certification-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+            background-color: #ff5a5f;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .certification-button:hover {
+            background-color: #ff8d8a;
+            transform: scale(1.1);
+        }
