@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        h1 {
+            text-align: center;
+            color: #00FFAB;
+            text-shadow: 0 0 10px #00FFAB, 0 0 20px #00FFAB;
+        }
+        .card {
+            display: flex;
+            flex-direction: row;
+            background: linear-gradient(145deg, #1E1E1E, #2A2A2A);
+            border-radius: 15px;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.19);
+            animation: float 3s infinite;
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+        .card-content {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .card-title {
+            font-size: 1.5rem;
+            margin: 0 0 10px;
+            color: #FFD700;
+            text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700;
+        }
+        .card-description {
+            margin: 10px 0;
+            color: #B3B3B3;
+        }
+        .card-technologies {
+            font-style: italic;
+            color: #87CEEB;
+        }
+        .card-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: #00FFAB;
+            text-decoration: none;
+            text-shadow: 0 0 10px #00FFAB, 0 0 20px #00FFAB;
+        }
+        .card-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Projects</h1>
+        <div id="projects"></div>
+    </div>
+
+    <script>
+        const projects = [
+            { title: "Project 1", description: "New Year Resolutions Challenge(SheCodes).", technologies: "Technologies used: HTML, CSS, JavaScript", link: "https://www.shecodes.io/contests/new-year-s-resolutions-challenge/contest_entries/zainab-akinola-nigerian/preview" },
+            { title: "Project 2", description: "World Clock (SheCodes).", technologies: "Technologies used: HTML, CSS, JavaScript", link: "https://tubular-pixie-fb3a80.netlify.app/" },
+            { title: "Project 3", description: "Weather Frecast Application(SheCodes).", technologies: "Technologies used: HTML, CSS, Javascript", link: "https://moonlit-cocada-f45bcd.netlify.app/" },
+            { title: "Project 4", description: "AI Poem Generator.", technologies: "Technologies used: HTML, CSS, Javascript", link: "https://friendly-chaja-35747f.netlify.app/" },
+
+            { title: "Project 5", description: "Description for Project 5.", technologies: "Technologies used: Vue.js, Firebase", link: "https://your-link-here.com/project-5" },
+            { title: "Project 6", description: "Description for Project 6.", technologies: "Technologies used: Angular, TypeScript", link: "https://your-link-here.com/project-6" },
+            { title: "Project 7", description: "Description for Project 7.", technologies: "Technologies used: PHP, Laravel", link: "https://your-link-here.com/project-7" },
+            { title: "Project 8", description: "Description for Project 8.", technologies: "Technologies used: Ruby, Rails", link: "https://your-link-here.com/project-8" },
+            { title: "Project 9", description: "Description for Project 9.", technologies: "Technologies used: Java, Spring Boot", link: "https://your-link-here.com/project-9" },
+            { title: "Project 10", description: "Description for Project 10.", technologies: "Technologies used: Kotlin, Android", link: "https://your-link-here.com/project-10" },
+            { title: "Project 11", description: "Description for Project 11.", technologies: "Technologies used: Swift, iOS", link: "https://your-link-here.com/project-11" },
+            { title: "Project 12", description: "Description for Project 12.", technologies: "Technologies used: C++, Unreal Engine", link: "https://your-link-here.com/project-12" },
+            { title: "Project 13", description: "Description for Project 13.", technologies: "Technologies used: Python, TensorFlow", link: "https://your-link-here.com/project-13" },
+            { title: "Project 14", description: "Description for Project 14.", technologies: "Technologies used: R, Shiny", link: "https://your-link-here.com/project-14" },
+            { title: "Project 15", description: "Description for Project 15.", technologies: "Technologies used: Go, Gin", link: "https://your-link-here.com/project-15" },
+            { title: "Project 16", description: "Description for Project 16.", technologies: "Technologies used: Scala, Akka", link: "https://your-link-here.com/project-16" },
+            { title: "Project 17", description: "Description for Project 17.", technologies: "Technologies used: Perl, Catalyst", link: "https://your-link-here.com/project-17" },
+            { title: "Project 18", description: "Description for Project 18.", technologies: "Technologies used: Rust, Actix", link: "https://your-link-here.com/project-18" },
+            { title: "Project 19", description: "Description for Project 19.", technologies: "Technologies used: Elixir, Phoenix", link: "https://your-link-here.com/project-19" },
+            { title: "Project 20", description: "Description for Project 20.", technologies: "Technologies used: C#, .NET", link: "https://your-link-here.com/project-20" }
+        ];
+
+        const projectsContainer = document.getElementById('projects');
+
+        projects.forEach(project => {
+            const card = document.createElement('div');
+            card.className = 'card';
+
+            const content = `
+                <div class="card-content">
+                    <h2 class="card-title">${project.title}</h2>
+                    <p class="card-description">${project.description}</p>
+                    <p class="card-technologies">${project.technologies}</p>
+                    <a href="${project.link}" class="card-link" target="_blank">View Project</a>
+                </div>
+            `;
+
+            card.innerHTML = content;
+            projectsContainer.appendChild(card);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SheCodes Certificates</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Dynamic Heading */
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin: 20px 0;
+            color: #007bff;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 4px solid #007bff;
+            animation: typing 4s steps(30, end), blink-caret 0.5s step-end infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink-caret {
+            from,
+            to {
+                border-color: transparent;
+            }
+            50% {
+                border-color: #007bff;
+            }
+        }
+
+        /* Certificate Grid */
+        .certificate-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        /* Certificate Card */
+        .certificate-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .certificate-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .certificate-card img {
+            max-width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .certificate-title {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .certificate-description {
+            font-size: 0.9rem;
+            margin: 10px 0;
+            color: #666;
+        }
+
+        .certificate-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .certificate-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Dynamic Heading -->
+    <h1>My Certificates</h1>
+
+    <!-- Certificates Container -->
+    <div class="certificate-container">
+        <!-- SheCodes Certificate 1 -->
+        <div class="certificate-card">
+            <img src="images/shecodes-1.png" alt="Advanced Web Development">
+            <p class="certificate-title">Advanced Web Development</p>
+            <p class="certificate-description">Advanced front-end development using HTML, CSS, JavaScript, APIs, Git.</p>
+            <a href="https://www.shecodes.io/certificates/60c94255913a8718e51d3c590a7011c9?_gl=1*5we6mk*_gcl_au*NzE2NzEwNTU4LjE3MzQxNTk5NTYuNzIyNTIwNTM4LjE3MzY0MzQ2MTcuMTczNjQzNDY2MA" class="certificate-button" target="_blank">View Certificate</a>
+        </div>
+
+        <!-- SheCodes Certificate 2 -->
+        <div class="certificate-card">
+            <img src="images/shecodes-2.png" alt="Web Development">
+            <p class="certificate-title">Web Development</p>
+            <p class="certificate-description">Built dynamic websites using HTML, CSS, JavaScript, and frameworks.</p>
+            <a href="https://www.shecodes.io/certificates/f9ed11facbc179fdcf280085f33e4780?_gl=1*p1slaz*_gcl_au*NzE2NzEwNTU4LjE3MzQxNTk5NTYuNzIyNTIwNTM4LjE3MzY0MzQ2MTcuMTczNjQzNDY2MA" class="certificate-button" target="_blank">View Certificate</a>
+        </div>
+
+        <!-- SheCodes Certificate 3 -->
+        <div class="certificate-card">
+            <img src="images/shecodes-3.png" alt="Introduction to Web Development">
+            <p class="certificate-title">Introduction to Web Development</p>
+            <p class="certificate-description">Built dynamic websites using HTML, CSS, JavaScript, and frameworks.</p>
+            <a href="https://www.shecodes.io/certificates/ab040afdc828122f104e1dc1b3ed648a?_gl=1*13tddji*_gcl_au*MjE0MDM3Njc4MS4xNzM3MDU4MTM3" class="certificate-button" target="_blank">View Certificate</a>
+        </div>
+
+        <!-- SheCodes Certificate 4 -->
+        <div class="certificate-card">
+            <img src="images/shecodes-4.png" alt="Machine Learning">
+            <p class="certificate-title">Introduction to Coding</p>
+            <p class="certificate-description">Gained hands-on experience with supervised and unsupervised learning models.</p>
+            <a href="https://www.shecodes.io/certificates/a16faedb19035003207f662ab86160b3?_gl=1*937oci*_gcl_au*NzE2NzEwNTU4LjE3MzQxNTk5NTYuNzIyNTIwNTM4LjE3MzY0MzQ2MTcuMTczNjQzNDY2MA" class="certificate-button" target="_blank">View Certificate</a>
+        </div>
+ <!--SheCodes Certificate 5 -->
+        <div class="certificate-card">
+            <img src="images/shecodes-5.png" alt="Introduction to AI">
+            <p class="certificate-title">Introduction to AI</p>
+            <p class="certificate-description">Learning of AI and how to incorporate an AI API into my code and creating an AI Poem Generator.</p>
+            <a href="https://www.shecodes.io/certificates/dd8fe3f8ae49b818abcaf06778ecacac?_gl=1*o9yiv0*_gcl_au*NzE2NzEwNTU4LjE3MzQxNTk5NTYuNzIyNTIwNTM4LjE3MzY0MzQ2MTcuMTczNjQzNDY2MA.." class="certificate-button" target="_blank">View Certificate</a>
+        </div>
+
+<!-- Certificate Udemy 1 -->
+        <div class="certificate-card">
+            <img src="images/udemy-1.jpg" alt="Building Responsive Website">
+            <p class="certificate-title">Building Responsive Website</p>
+            <p class="certificate-description">Gained hands-on experience with Html and Css.</p>
+            <a href="https://www.udemy.com/certificate/UC-43b67b2a-3c39-4cdf-81c9-6a30ed3d0c53/" class="certificate-button" target="_blank">View Certificate</a>
+        </div>
+<!-- Certificate Udemy 2 -->
+        <div class="certificate-card">
+            <img src="images/udemy-2.jpg" alt="Python App Development">
+            <p class="certificate-title">Python App Development</p>
+            <p class="certificate-description">Gained hands-on experience using Python to build Applications</p>
+            <a href="https://www.udemy.com/certificate/UC-42c0184a-639c-44c1-a05c-392b71d028f1/" class="certificate-button" target="_blank">View Certificate</a>
+        </div>
+   <!-- Certificate Udemy 3 -->
+        <div class="certificate-card">
+            <img src="images/udemy-3.jpg" alt="Learn Javascript">
+            <p class="certificate-title">Learn Javascript by Creating 10 App</p>
+            <p class="certificate-description">Gained hands-on experience using Javascript to create 10 Practical Projects</p>
+            <a href="https://www.udemy.com/certificate/UC-9944c687-a1c3-4f42-92e5-1144b4cd8eec/" class="certificate-button" target="_blank">View Certificate</a>
+        </div>
+  <!-- Certificate Udemy 4 -->
+        <div class="certificate-card">
+            <img src="images/udemy-4.jpg" alt="Creating Android App Using Kotlin Language">
+            <p class="certificate-title">Building Android App Using Kotlin Language</p>
+            <p class="certificate-description">Gained hands-on experience with Building 3 Android Applications in Kotlin Language</p>
+            <a href="https://www.udemy.com/certificate/UC-1365a739-c740-416b-b9f6-b8c6c59b28a2/" class="certificate-button" target="_blank">View Certificate</a>
+        </div>
+
+  <!-- Certificate Great Learning 1 -->
+        <div class="certificate-card">
+            <img src="images/greatl-1.jpg" alt="Artificial Intelligence Fundamentals">
+            <p class="certificate-title">Artificial Intelligence Fundamentals</p>
+            <p class="certificate-description">Artificial Intelligence Fundamentals</p>
+            <a href="https://olympus.mygreatlearning.com/courses/84191/certificate" class="certificate-button" target="_blank">View Certificate</a>
+        </div>
+  <!-- Certificate Great Learning 2 -->
+        <div class="certificate-card">
+            <img src="images/greatl-1.jpg" alt="Design App">
+            <p class="certificate-title">How To Design Applications</p>
+            <p class="certificate-description">How To Design Applications</p>
+            <a href="https://olympus.mygreatlearning.com/courses/65085/certificate" class="certificate-button" target="_blank">View Certificate</a>
+        </div>
+  <!-- Certificate Great Learning 3 -->
+        <div class="certificate-card">
+            <img src="images/greatl-3.jpg" alt="UI / UX for Beginners">
+            <p class="certificate-title">UI / UX for Beginners</p>
+            <p class="certificate-description">Learning Users Experience and Users Interface</p>
+            <a href="https://olympus.mygreatlearning.com/courses/55928/certificate" class="certificate-button" target="_blank">View Certificate</a>
+        </div>
+  <!-- Certificate Great Learning 4 -->
+        <div class="certificate-card">
+            <img src="images/greatl-4.jpg" alt="Programming Basics">
+            <p class="certificate-title">Programming Basics</p>
+            <p class="certificate-description">Learning Programming Basics for Web Developers</p>
+            <a href="https://olympus.mygreatlearning.com/courses/46349/certificate" class="certificate-button" target="_blank">View Certificate</a>
+        </div>
+  <!-- Certificate Great Learning 5 -->
+        <div class="certificate-card">
+            <img src="images/greatl-5.jpg" alt="Java Programming">
+            <p class="certificate-title">Java Programming</p>
+            <p class="certificate-description">Learning Java Programming for Frontend Web Developers</p>
+            <a href="https://olympus.mygreatlearning.com/courses/12385/certificate" class="certificate-button" target="_blank">View Certificate</a>
+        </div>
+  <!-- Certificate Great Learning 6 -->
+        <div class="certificate-card">
+            <img src="images/greatl-6.jpg" alt="Android Application Development">
+            <p class="certificate-title">Android Application Development</p>
+            <p class="certificate-description">Learning Android Application Development through Practical Projects</p>
+            <a href="https://olympus.mygreatlearning.com/courses/55928/certificate" class="certificate-button" target="_blank">View Certificate</a>
+        </div>
+
+
+  <!-- Certificate Great Learning 7 -->
+        <div class="certificate-card">
+            <img src="images/greatl-7.jpg" alt="Android App with Python">
+            <p class="certificate-title">Android App with Python</p>
+            <p class="certificate-description">Learning How to use Python to build Android Application Development through Practical Projects</p>
+            <a href="https://olympus.mygreatlearning.com/courses/47923/certificate" class="certificate-button" target="_blank">View Certificate</a>
+        </div>
+  <!-- Certificate Great Learning 8 -->
+        <div class="certificate-card">
+            <img src="images/greatl-8.jpg" alt="Sorting Algorithms in C">
+            <p class="certificate-title">Sorting Algorithms in C</p>
+            <p class="certificate-description">Learning How to sort Algorithm in C</p>
+            <a href="https://olympus.mygreatlearning.com/courses/43765/certificate" class="certificate-button" target="_blank">View Certificate</a>
+        </div>
+  <!-- Certificate Great Learning 9  -->
+        <div class="certificate-card">
+            <img src="images/greatl-9.jpg" alt="Algorithms in C">
+            <p class="certificate-title">Algorithms in C</p>
+            <p class="certificate-description">Algorithms in C</p>
+            <a href="https://olympus.mygreatlearning.com/courses/40416/certificate" class="certificate-button" target="_blank">View Certificate</a>
+        </div>
+
+   <!--Certificate Great Learning 10 -->
+        <div class="certificate-card">
+            <img src="images/greatl-10.jpg" alt="Visual Graphics in C">
+            <p class="certificate-title">Visual Graphics in C</p>
+            <p class="certificate-description">Learning Visual Graphics in C</p>
+            <a href="https://olympus.mygreatlearning.com/courses/50631/certificate" class="certificate-button" target="_blank">View Certificate</a>
+        </div>
+  <!-- Certificate Great Learning 11 -->
+        <div class="certificate-card">
+            <img src="images/greatl-11.jpg" alt="Data Structures in C">
+            <p class="certificate-title">Data Structures in C</p>
+            <p class="certificate-description">Learning Data Structures in C</p>
+            <a href="https://olympus.mygreatlearning.com/courses/14560/certificate" class="certificate-button" target="_blank">View Certificate</a>
+        </div>
+  <!-- Certificate Great Learning  12-->
+        <div class="certificate-card">
+            <img src="images/greatl-12.jpg" alt="Factorial Program in C">
+            <p class="certificate-title">Factorial Program in C</p>
+            <p class="certificate-description">Factorial Program in C</p>
+            <a href="https://olympus.mygreatlearning.com/courses/57913/certificate" class="certificate-button" target="_blank">View Certificate</a>
+        </div>
+
+<!--Certificate Great Learning 13 -->
+        <div class="certificate-card">
+            <img src="images/greatl-13.jpg" alt="Matrix Multiplication in C">
+            <p class="certificate-title">Matrix Multiplication in C</p>
+            <p class="certificate-description">Learning Matrix Multiplication in C</p>
+            <a href="https://olympus.mygreatlearning.com/courses/70990/certificate" class="certificate-button" target="_blank">View Certificate</a>
+        </div>
+  <!-- Certificate Great Learning 14 -->
+        <div class="certificate-card">
+            <img src="images/greatl-14.jpg" alt="Heap Sort Program in C">
+            <p class="certificate-title">Heap Sort Program in C</p>
+            <p class="certificate-description">Learning Heap Sort Program in C</p>
+            <a href="https://olympus.mygreatlearning.com/courses/67313/certificate" class="certificate-button" target="_blank">View Certificate</a>
+        </div>
+  <!-- Certificate Great Learning  15-->
+        <div class="certificate-card">
+            <img src="images/greatl-15.jpg" alt="GitHub Tutorial for Beginners">
+            <p class="certificate-title">GitHub Tutorial for Beginners</p>
+            <p class="certificate-description">GitHub Tutorial for Beginners</p>
+            <a href="https://olympus.mygreatlearning.com/courses/53846/certificate" class="certificate-button" target="_blank">View Certificate</a>
+        </div>
+<!-- Certificate Great Learning 14 -->
+        <div class="certificate-card">
+            <img src="images/greatl-14.jpg" alt="Heap Sort Program in C">
+            <p class="certificate-title">Heap Sort Program in C</p>
+            <p class="certificate-description">Learning Heap Sort Program in C</p>
+            <a href="https://olympus.mygreatlearning.com/courses/67313/certificate" class="certificate-button" target="_blank">View Certificate</a>
+        </div>
+  <!-- Certificate Great Learning  15-->
+        <div class="certificate-card">
+            <img src="images/greatl-15.jpg" alt="GitHub Tutorial for Beginners">
+            <p class="certificate-title">GitHub Tutorial for Beginners</p>
+            <p class="certificate-description">GitHub Tutorial for Beginners</p>
+            <a href="https://olympus.mygreatlearning.com/courses/53846/certificate" class="certificate-button" target="_blank">View Certificate</a>
+        </div>
+<!-- Certificate Great Learning 16 -->
+        <div class="certificate-card">
+            <img src="images/greatl-16.jpg" alt="Git Tutorial">
+            <p class="certificate-title">Git Tutorial C</p>
+            <p class="certificate-description">Learning Git Tutorial</p>
+            <a href="https://olympus.mygreatlearning.com/courses/65405/certificate" class="certificate-button" target="_blank">View Certificate</a>
+        </div>
+  <!-- Certificate Great Learning  17-->
+        <div class="certificate-card">
+            <img src="images/greatl-17.jpg" alt="Intro to Graphic Design with Photoshop">
+            <p class="certificate-title">Intro to Graphic Design with Photoshop</p>
+            <p class="certificate-description">Intro to Graphic Design with Photoshop</p>
+            <a href="https://olympus.mygreatlearning.com/courses/19046/certificate" class="certificate-button" target="_blank">View Certificate</a>
+        </div>
+
+<!-- Certificate ALX 18 -->
+        <div class="certificate-card">
+            <img src="images/greatl.jpg" alt="ALX Software Engineering Frontend">
+            <p class="certificate-title">Alx Software Engineering </p>
+            <p class="certificate-description">Alx Software Engineering Certificate in View</p>
+            <a href="#" class="certificate-button" target="_blank">View Certificate</a>
+        </div>
+ 
+ <!-- Certificate Kemonai  19-->
+        <div class="certificate-card">
+            <img src="images/greatl.jpg" alt="Kemonai AI and Machine Learn">
+            <p class="certificate-title">AI and Machine Learning</p>
+            <p class="certificate-description">AI and Machine Learning Certificate in View</p>
+            <a href="#" class="certificate-button" target="_blank">View Certificate</a>
+        </div>
+
+<!-- Certificate Tecvinson  20-->
+        <div class="certificate-card">
+            <img src="images/greatl.jpg" alt="Tecvinson Software Engineering Backend Development">
+            <p class="certificate-title">Tecvinsion Engineering Backend Development</p>
+            <p class="certificate-description">Software Engineering Backend Development Certificate in View</p>
+            <a href="#" class="certificate-button" target="_blank">View Certificate</a>
+        </div>
+<!-- Certificate Transformation College  21-->
+        <div class="certificate-card">
+            <img src="images/greatl.jpg" alt="Transformation College Computer Software Engineering ">
+            <p class="certificate-title">Computer Software Engineering</p>
+            <p class="certificate-description">Transformation College Nationaal Innovation Diploma in Computer Software Engineering Certificate in View</p>
+            <a href="#" class="certificate-button" target="_blank">View Certificate</a>
+        </div>
+<!-- Certificate Rita Africa  22-->
+        <div class="certificate-card">
+            <img src="images/greatl.jpg" alt="Rita Africa Data Science and Machine Learning ">
+            <p class="certificate-title">Rita Africa Data Science and Machine Learning</p>
+            <p class="certificate-description">Rita Africa Data Science and Machine Learning Certificate in View</p>
+            <a href="#" class="certificate-button" target="_blank">View Certificate</a>
+        </div>
+<!-- Certificate Rita Africa  23-->
+        <div class="certificate-card">
+            <img src="images/greatl.jpg" alt="FreeCodeCamp Responsive Web Designing ">
+            <p class="certificate-title">FreeCodeCamp Responsive Web Designing</p>
+            <p class="certificate-description">FreeCodeCamp Responsive Web Designing Certificate in View</p>
+            <a href="#" class="certificate-button" target="_blank">View Certificate</a>
+        </div>
+
+
+ </div>
+</body>
+</html>
